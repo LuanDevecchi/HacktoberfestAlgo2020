@@ -19,14 +19,11 @@ int main()
 	{
 		const bool fizz_flag = i % 3 == 0;
 		const bool buzz_flag = i % 5 == 0;
+		
 		if ( fizz_flag || buzz_flag )
-		{
 			std::cout << lookuptablefizz[fizz_flag] << lookuptablebuzz[buzz_flag] << std::endl;
-		}
 		else
-		{
 			std::cout << i << std::endl;
-		}
 	}
 
 	return EXIT_SUCCESS;
