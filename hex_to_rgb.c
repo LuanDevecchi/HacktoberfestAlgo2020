@@ -3,15 +3,15 @@
 //
 // Rewrite the code in C trying to understand
 
-typedef struct _rgba
+typedef struct _rgb
 {
  float r, g, b;
-} rgba, * p_rgba;
+} rgb, * p_rgb;
 
 
-rgba hex_to_rgb(int hex_code)
+rgb hex_to_rgb(int hex_code)
 {
-  rgba rgb_struct;
+  rgb rgb_struct;
 
   rgb_struct.r = ((hex_code >> 16) & 0xFF) / 255.0f;
   rgb_struct.g = ((hex_code >> 8) & 0xFF ) / 255.0f;
@@ -23,5 +23,5 @@ rgba hex_to_rgb(int hex_code)
   // then you use the mask 0xFF to consider just the first 8 bits and so-on.
   //
 
-  return rgba_struct;
+  return rgb_struct;
 }
